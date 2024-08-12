@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const videoElement = document.getElementById('randomVideo');
     const overlay = document.getElementById('overlay');
     const playButton = document.getElementById('playButton');
-    const videoNumber = Math.floor(Math.random() * 69) + 1;
+    const videoNumber = Math.floor(Math.random() * 73) + 1;
     const videoSource = `${videoNumber}.mp4`;
 
     videoElement.src = videoSource;
