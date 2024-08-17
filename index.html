@@ -24,6 +24,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
     <title>A Random Family Guy Funny Moment</title>
+    
 </head>
 <body>
     <div id="overlay">
@@ -38,6 +39,29 @@
         <img src="questionmark.png" alt="Toggle Paragraph" id="question">
     </label>
     <p id="popup">TikTok content automation farms have found that Family Guy consistently delivers the highest audience retention and the most positive engagement. Why not indulge in a quick laugh with every page refresh? It’s the easiest way to get your dopamine fix without even trying.</p>
+    
     <script src="script.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+        const playButton = document.getElementById('playButton');
+        const video = document.getElementById('randomVideo');
+        const overlay = document.getElementById('overlay');
+
+        video.pause();
+        video.muted = true;
+        video.removeAttribute('autoplay');
+
+        playButton.addEventListener('click', function () {
+            overlay.style.display = 'none';
+            video.muted = false;
+            video.play();
+        });
+
+            if (event.target !== playButton) {
+                video.pause();
+            }
+        });
+</script>
+
 </body>
+
 </html>
