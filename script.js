@@ -1,4 +1,4 @@
-//this was made with chatgpt i dont know js :skull:
+//this part was made with chatgpt i dont know js :skull:
 
 document.addEventListener('DOMContentLoaded', function() {
     const videoElement = document.getElementById('randomVideo');
